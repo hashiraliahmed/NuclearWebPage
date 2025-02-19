@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuclear Energy in the USA</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        Nuclear Energy in the USA: A Comprehensive Analysis
+    </header>
+    <div class="container">
+        <div class="navigation">
+            <a href="#executive-summary">Executive Summary</a>
+            <a href="#overview">Overview</a>
+            <a href="#technology">Technology</a>
+            <a href="#market">Market & Economics</a>
+            <a href="#policy">Policy</a>
+            <a href="#future">Future Trends</a>
+        </div>
+        <section id="executive-summary">
+            <h2>0. Executive Summary</h2>
+            <p>Nuclear energy contributes ~19% of U.S. electricity and is the largest source of carbon-free power...</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Nuclear_Power_Station.jpg" alt="Nuclear Power Station">
+        </section>
+        <section id="overview">
+            <h2>1. Overview of Nuclear Energy</h2>
+            <p>Nuclear power comes from fission (splitting atoms) and fusion (combining atoms). The U.S. has 93 commercial reactors...</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Nuclear_Reactor_Diagram.png" alt="Nuclear Reactor Diagram">
+        </section>
+        <section id="technology">
+            <h2>2. Nuclear Technology & Innovations</h2>
+            <p>Current reactors use Light Water Reactor (LWR) technology, mainly Pressurized Water Reactors (PWRs)...</p>
+        </section>
+        <section id="market">
+            <h2>3. U.S. Nuclear Market & Economic Outlook</h2>
+            <p>The U.S. has the world's largest nuclear fleet, with ~95 GW capacity...</p>
+            <div class="chart-container">
+                <canvas id="nuclearChart"></canvas>
+            </div>
+        </section>
+        <section id="policy">
+            <h2>4. Policy & Regulations in the U.S.</h2>
+            <p>The Nuclear Regulatory Commission (NRC) oversees nuclear safety and licensing...</p>
+        </section>
+        <section id="future">
+            <h2>5. Future of Nuclear Energy in the U.S.</h2>
+            <p>The DOE aims to triple nuclear capacity by 2050...</p>
+        </section>
+    </div>
+    <script>
+        var ctx = document.getElementById('nuclearChart').getContext('2d');
+        var nuclearChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Nuclear', 'Coal', 'Natural Gas', 'Wind', 'Solar'],
+                datasets: [{
+                    label: 'Electricity Generation in TWh',
+                    data: [778, 950, 1600, 300, 120],
+                    backgroundColor: ['blue', 'black', 'gray', 'green', 'yellow']
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
