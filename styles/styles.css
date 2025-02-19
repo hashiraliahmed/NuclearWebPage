@@ -1,17 +1,19 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: #006e3c;
     color: white;
     padding: 20px;
     text-align: center;
     font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .container {
@@ -20,42 +22,58 @@ header {
     overflow: hidden;
     background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     margin-top: 20px;
+    border-radius: 8px;
 }
 
 .navigation {
     text-align: center;
     margin-bottom: 20px;
+    background: #004c2f;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .navigation a {
     margin: 5px;
     padding: 10px 15px;
-    background: #333;
-    color: white;
+    background: white;
+    color: #006e3c;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
     display: inline-block;
+    transition: background 0.3s, color 0.3s;
 }
 
 .navigation a:hover {
-    background: #555;
+    background: #006e3c;
+    color: white;
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: #006e3c;
+    border-bottom: 3px solid #004c2f;
     padding-bottom: 5px;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
-img {
-    width: 100%;
+img.small-img {
+    width: 50%;
     height: auto;
     margin-top: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .chart-container {
     text-align: center;
     margin-top: 20px;
+    padding: 20px;
+    background: #e6f2ec;
+    border-radius: 5px;
 }
